@@ -169,3 +169,53 @@
 // }
 
 // console.log(ClassWithPrivateStaticField.publicStaticMethod() === 42)
+
+// const array1 = [5, 12, 50, 130, 44]
+
+// const isLargeNumber = element => element > 45
+
+// console.log(array1.findLastIndex(isLargeNumber)) // идет с конца
+
+// const found = array1.findLast(element => element > 45)
+
+// console.log(found) // идет с конца и возвращает значение
+
+class IncreasingCounter {
+	#count = 0 // приватное
+	_count = 0 // публичное
+	static PI = 22 / 7
+	get value() {
+		console.log('Getting the current value!')
+		return this.#count
+	}
+	increment() {
+		this.#count++
+	}
+}
+
+class Animal {
+	constructor(name) {
+		this.name = name
+	}
+}
+
+// class Cat extends Animal {
+// 	constructor(name) {
+// 		super(name)
+// 		this.likesBaths = false
+// 	}
+// 	meow() {
+// 		console.log('Meow!')
+// 	}
+// } Старый синтаксис, теперь не нужно вызывать конструктор и обращаться в супер
+
+class Cat extends Animal {
+	likesBaths = false
+	meow() {
+		console.log('Meow!')
+	}
+}
+
+const atArray = [5, 7, 8, 2, 1, 75, 25]
+
+console.log('atArray', atArray.at(6)) // принимает индекс, возвращает число
