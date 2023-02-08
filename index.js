@@ -99,3 +99,13 @@ finallyPromise()
 	.then(res => console.log(res))
 	.catch(err => console.log(err))
 	.finally(() => console.log('eeeeeeeee'))
+
+const asyncArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+const asyncArrayFunction = async () => {
+	for await (let num of asyncArray) {
+		console.log(num)
+	}
+}
+
+asyncArrayFunction()
