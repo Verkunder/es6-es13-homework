@@ -1,0 +1,20 @@
+{
+	"name": "es6-es13-homework",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"type": "module",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Verkunder/es6-es13-homework.git"
+	},
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/Verkunder/es6-es13-homework/issues"
+	},
+	"homepage": "https://github.com/Verkunder/es6-es13-homework#readme"
+}
