@@ -75,7 +75,7 @@ const asyncAwait = async () => {
 const user = { id: 100, name: 'Howard Moon' }
 const userWithPass = { ...user, password: 'Password!' }
 
-удаление
+// удаление
 const noPassword = ({ password, ...rest }) => rest
 const user1 = {
 	id: 100,
@@ -83,7 +83,7 @@ const user1 = {
 	password: 'Password!',
 }
 
-noPassword(user1)
+console.log(noPassword(user1))
 
 const { name, ...rest } = user
 
@@ -184,9 +184,9 @@ console.log(found)
 
 class IncreasingCounter {
 	#count = 0
-	// приватное
+	приватное
 	_count = 0
-	// публичное
+	публичное
 	static PI = 22 / 7
 	get value() {
 		console.log('Getting the current value!')
@@ -203,15 +203,15 @@ class Animal {
 	}
 }
 
-class Cat extends Animal {
-	constructor(name) {
-		super(name)
-		this.likesBaths = false
-	}
-	meow() {
-		console.log('Meow!')
-	}
-}
+// class Cat extends Animal {
+// 	constructor(name) {
+// 		super(name)
+// 		this.likesBaths = false
+// 	}
+// 	meow() {
+// 		console.log('Meow!')
+// 	}
+// }
 
 // Старый синтаксис, теперь не нужно вызывать конструктор и обращаться в супер
 
